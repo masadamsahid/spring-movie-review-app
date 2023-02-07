@@ -10,6 +10,8 @@ public class MovieService {
     @Autowired
     private MovieRepository movieRepository;
     public List<Movie> allMovies(){
-        return movieRepository.findAll();
+        List<Movie> movies = movieRepository.findAll();
+        System.out.println(movies);
+        return movies;
     }
 }
