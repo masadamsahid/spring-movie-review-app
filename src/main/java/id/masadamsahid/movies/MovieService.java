@@ -13,7 +13,6 @@ public class MovieService {
 
     public List<Movie> allMovies(){
         List<Movie> movies = movieRepository.findAll();
-        System.out.println(movies);
         return movies;
     }
 
